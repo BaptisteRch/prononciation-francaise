@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Site Tailwind</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <ul class="m-5">
+      <li
+        class="first:text-red-600 last:underline only:font-bold not-first:mt-5 not-last:uppercase"
+      >
+        Element A
+      </li>
+      <li
+        class="first:text-red-600 last:underline only:font-bold not-first:mt-5 not-last:uppercase"
+      >
+        Element B
+      </li>
+      <li
+        class="first:text-red-600 last:underline only:font-bold not-first:mt-5 not-last:uppercase"
+      >
+        Element C
+      </li>
+    </ul>
+
+    <div
+      class="h-40 flex justify-center items-center border border-blue-300 gap-6 p-2"
+    >
+      <input
+        class="border bg-slate-50 p-4 rounded-md disabled:opacity-50 disabled:bg-red-200 disabled:cursor-not-allowed placeholder:italic"
+        placeholder="Entrez votre nom"
+        disabled
+      />
+      <input
+        class="border bg-slate-50 p-4 rounded-md required:border-red-600 required:border"
+        placeholder="Entrez votre nom"
+        required
+      />
+    </div>
+
+    <div class="flex justify-center items-center flex-col m-5">
+      <a
+        href="https://believemy.com"
+        class="after:content-['↗'] after:ml-1 after:text-sm after:text-blue-400"
+        >Aller sur Believemy</a
+      ><a
+        href="https://believemy.com"
+        class="before:content-['↗'] before:mr-1 before:text-sm before:text-blue-400"
+        >Aller sur Believemy</a
+      >
+    </div>
+
+    <div
+      class="flex justify-center items-center selection:bg-amber-100 selection:text-amber-500 m-5"
+    >
+      <p
+        class="w-40 first-line:uppercase first-letter:font-bold first-letter:text-5xl font-serif"
+      >
+        Bienvenue sur mon site internet, il est en construction.
+      </p>
+    </div>
+
+    <div class="flex justify-center items-centerm-5">
+      <ul class="justify-center list-disc marker:text-amber-600">
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+      </ul>
+    </div>
+
+    <input
+      type="file"
+      class="bg-neutral-100 file:bg-gray-300 file:px-4 file:py-1.5 file:rounded file:mr-5 px-4 py-1.5 rounded m-5"
+    />
+  </body>
+</html>
